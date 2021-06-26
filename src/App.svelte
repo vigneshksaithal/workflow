@@ -11,9 +11,6 @@
   router.start();
 </script>
 
-<svelte:head>
-  <Head />
-</svelte:head>
 <!-- <Head /> -->
 
 <div class="container-sm px-3 max-w-3xl mx-auto mt-10">
