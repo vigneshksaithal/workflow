@@ -11,10 +11,10 @@
     "postcss": "^8.3.5",
     "svelte": "^3.37.0",
     "tailwindcss": "^2.2.4",
-    "vite": "^2.3.8"
+    "vite": "^2.4.1"
   },
   "dependencies": {
-    "dayjs": "^1.10.5",
+    "dayjs": "^1.10.6",
     "page": "^1.11.6"
   }
 }
