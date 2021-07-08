@@ -4,16 +4,16 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 button {
-  @apply text-xs rounded-md px-4 py-5;
+  @apply rounded-md;
 }
 
 .btn-primary {
-  @apply bg-blue-500 text-white;
-  max-width: 6rem;
+  @apply text-lg bg-blue-500 text-white px-5 py-2;
+  /* max-width: 6rem; */
 }
 
 .btn-secondary {
-  @apply px-4 py-1 border-gray-500 border-2 rounded-full;
+  @apply text-sm px-4 py-1 border-gray-500 border-2 rounded-full;
 }
 
 input {
