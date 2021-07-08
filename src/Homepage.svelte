@@ -31,18 +31,17 @@
 
 <div class="">
   <div class="border-2">
-    <span class="flex justify-center text-center text-4xl"
-      >{minutes}:{seconds}</span
-    >
+    <div class="grid grid-cols-12 px-2 py-2">
+      <span class="col-span-8 text-4xl">{minutes}:{seconds}</span>
+      <button class="col-span-4 btn-primary" on:click={startTimer}>START</button
+      >
+    </div>
     <progress class="w-full bg-indigo-600" value={$timer / original} />
   </div>
 
-  <div class="card px-8 mb-6">
-    <div class="grid grid-cols-6 gap-4 mb-4">
-      <input type="text" class="input-text col-span-5" placeholder="Title" />
-      <button class="col-span-1 btn-primary max-w-sm" on:click={startTimer}
-        >START</button
-      >
+  <div class="card px-4 mb-6">
+    <div class="mb-4">
+      <input class="input-text w-full" type="text" placeholder="Title" />
     </div>
 
     {#each tasksInput.subTasks as subTask}
@@ -55,11 +54,8 @@
         />
       </div>
     {/each}
-    <div class="grid grid-cols-6">
-      <button class="btn-secondary col-span-2 my-3" on:click={addTask}
-        >Add a task</button
-      >
-      <!-- <input class="col-span-3" type="range" step="20" /> -->
+    <div class="">
+      <button class="btn-secondary my-3" on:click={addTask}>Add a task</button>
     </div>
   </div>
 </div>
