@@ -31,11 +31,11 @@
 
 <div class="">
   <div class="card border-2">
-    <div class="grid grid-cols-12 px-2 py-2">
-      <span class="col-span-10 text-4xl">{minutes}:{seconds}</span>
-      <button class="col-span-2 w-full btn-primary" on:click={startTimer}
-        >START</button
-      >
+    <div class="grid grid-cols-2 px-2 py-2">
+      <span class="place-self-start text-3xl">{minutes}:{seconds}</span>
+      <div class="place-self-end">
+        <button class="btn-primary" on:click={startTimer}>START</button>
+      </div>
     </div>
     <!-- progress bar -->
     <div class="h-3 relative w-full rounded-full overflow-hidden mt-2">
@@ -53,7 +53,7 @@
   <div class="card px-6 mt-4 mb-6">
     <div class="grid grid-cols-12 gap-4 mb-5">
       <input
-        class="col-span-11 input-text w-full"
+        class="col-span-12 input-text w-full"
         type="text"
         placeholder="Title"
       />
@@ -62,13 +62,9 @@
     </div>
 
     {#each tasksInput.subTasks as subTask}
-      <div class="grid grid-cols-12">
+      <div class="grid grid-cols-12 mt-3">
         <input class="col-span-1" type="checkbox" />
-        <input
-          class="col-span-11 my-2"
-          type="text"
-          bind:value={subTask.title}
-        />
+        <input class="col-span-11" type="text" bind:value={subTask.title} />
       </div>
     {/each}
     <div class="">
