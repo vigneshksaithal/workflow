@@ -63,7 +63,7 @@
     </div>
 
     {#each tasksInput.subTasks as subTask}
-      <div class="grid grid-cols-12 mt-4">
+      <div class="grid grid-cols-12 gap-2 mt-4 mb-4">
         <input
           class="checkbox col-span-1 line-through {subTask.isTaskDone == true
             ? 'line-through'
@@ -83,7 +83,7 @@
       </div>
     {/each}
     <div class="">
-      <button class="btn-secondary mt-5" on:click={addTask}>Add a task</button>
+      <button class="btn-secondary" on:click={addTask}>Add a task</button>
     </div>
   </div>
 </div>
