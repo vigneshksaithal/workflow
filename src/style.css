@@ -20,8 +20,8 @@ input {
   @apply border-b-2 border-black focus:border-b-2 focus:border-blue-400 focus:outline-none;
 }
 
-.input-text {
-  border-bottom: 0.13rem solid black;
+.checkbox {
+  @apply appearance-none bg-gray-100 border-2 border-gray-400 w-5 h-5 rounded-full checked:bg-blue-300 checked:border-transparent;
 }
 
 .card {
