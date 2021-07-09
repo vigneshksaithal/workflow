@@ -23,6 +23,7 @@
     tasksInput.subTasks.push({
       title: "",
       status: "",
+      isTaskDone: false,
     });
 
     tasksInput.subTasks = tasksInput.subTasks;
@@ -62,13 +63,27 @@
     </div>
 
     {#each tasksInput.subTasks as subTask}
-      <div class="grid grid-cols-12 mt-3">
-        <input class="col-span-1" type="checkbox" />
-        <input class="col-span-11" type="text" bind:value={subTask.title} />
+      <div class="grid grid-cols-12 mt-4">
+        <input
+          class="checkbox col-span-1 line-through {subTask.isTaskDone == true
+            ? 'line-through'
+            : ''}"
+          type="checkbox"
+          on:change={() => {
+            subTask.isTaskDone = true;
+            subTask = subTask;
+          }}
+        />
+        <input
+          class="col-span-11"
+          type="text"
+          placeholder="Task name"
+          bind:value={subTask.title}
+        />
       </div>
     {/each}
     <div class="">
-      <button class="btn-secondary my-3" on:click={addTask}>Add a task</button>
+      <button class="btn-secondary mt-5" on:click={addTask}>Add a task</button>
     </div>
   </div>
 </div>
