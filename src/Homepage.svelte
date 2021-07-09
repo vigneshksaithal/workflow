@@ -33,7 +33,9 @@
 <div class="">
   <div class="card border-2">
     <div class="grid grid-cols-2 px-2 py-2">
-      <span class="place-self-start text-3xl">{minutes}:{seconds}</span>
+      <span class="place-self-start align-bottom text-3xl"
+        >{minutes}:{seconds}</span
+      >
       <div class="place-self-end">
         <button class="btn-primary" on:click={startTimer}>START</button>
       </div>
@@ -47,8 +49,6 @@
         style="width: {($timer / initialTime) * 100}%;"
       />
     </div>
-
-    <!-- <progress class="w-full bg-indigo-600" value={$timer / original} /> -->
   </div>
 
   <div class="card px-6 mt-4 mb-6">
@@ -63,9 +63,10 @@
     </div>
 
     {#each tasksInput.subTasks as subTask}
-      <div class="grid grid-cols-12 gap-2 mt-4 mb-4">
+      <div class="grid grid-cols-12 mt-4 mb-4">
         <input
-          class="checkbox col-span-1 line-through {subTask.isTaskDone == true
+          class="checkbox col-span-1 pr-2 line-through {subTask.isTaskDone ==
+          true
             ? 'line-through'
             : ''}"
           type="checkbox"
