@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
+  @apply bg-gray-50;
 }
 
 button {
@@ -10,7 +11,6 @@ button {
 
 .btn-primary {
   @apply text-lg bg-blue-500 text-white px-5 py-2;
-  /* max-width: 6rem; */
 }
 
 .btn-secondary {
@@ -26,5 +26,5 @@ input {
 }
 
 .card {
-  @apply border-gray-300 border-2 px-3 py-5 my-2 rounded-lg;
+  @apply bg-white border-gray-300 border-2 px-3 py-5 my-2 rounded-lg;
 }
