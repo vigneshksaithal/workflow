@@ -13,6 +13,6 @@
 
 <Head />
 
-<div class="container px-3 max-w-3xl mx-auto mt-2">
+<div class="container px-6 max-w-xl mx-auto mt-6">
   <svelte:component this={page} />
 </div>
