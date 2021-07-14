@@ -31,16 +31,14 @@
 </script>
 
 <div class="card border-2 mt-8">
-  <div class="grid grid-cols-2 px-3 py-2">
-    <span class="place-self-start align-bottom text-3xl"
-      >{minutes}:{seconds}</span
-    >
+  <div class="grid grid-cols-2 px-2 py-2">
+    <span class="place-self-start text-3xl">{minutes}:{seconds}</span>
     <div class="place-self-end">
       <button class="btn-primary" on:click={startTimer}>START</button>
     </div>
   </div>
   <!-- progress bar -->
-  <div class="px-3 mt-3">
+  <div class="px-2 mt-3">
     <div class="h-3 relative w-full rounded-full overflow-hidden">
       <div class="w-full h-full bg-gray-200 absolute" />
       <div
@@ -74,7 +72,7 @@
         }}
       />
       <input
-        class="col-span-11"
+        class="col-span-11 ml-2"
         type="text"
         placeholder="Task name"
         bind:value={subTask.title}
