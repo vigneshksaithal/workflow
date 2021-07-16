@@ -28,6 +28,7 @@
 
     tasksInput.subTasks = tasksInput.subTasks;
   }
+  var checkbox;
 </script>
 
 <div class="card border-2 mt-8">
@@ -62,17 +63,13 @@
   {#each tasksInput.subTasks as subTask}
     <div class="grid grid-cols-12 mt-4 mb-4">
       <input
-        class="checkbox col-span-1 pr-2 line-through {subTask.isTaskDone == true
-          ? 'line-through'
-          : ''}"
+        class="checkbox col-span-1 pr-2"
         type="checkbox"
-        on:change={() => {
-          subTask.isTaskDone = true;
-          subTask = subTask;
-        }}
+        bind:checked={subTask.isTaskDone}
       />
       <input
-        class="col-span-11 ml-2"
+        class="col-span-11 ml-2 disabled:opacity-30"
+        disabled={subTask.isTaskDone}
         type="text"
         placeholder="Task name"
         bind:value={subTask.title}
