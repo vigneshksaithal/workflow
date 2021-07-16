@@ -39,9 +39,7 @@
       mobileMenuOpen = false;
     }}
   >
-    <a href="/" class="block py-1 hover:underline">Home</a>
-    <a href="/" class="block py-1 hover:underline">About us</a>
-    <a href="/" class="block py-1 hover:underline">Services</a>
+    <a href="/" class="block py-1 hover:underline">About</a>
     <a href="/" class="block py-1 hover:underline">Contact</a>
   </nav>
 </header>
