@@ -14,7 +14,7 @@ button {
 }
 
 .btn-secondary {
-  @apply text-sm px-4 py-1 border-gray-500 border-2 rounded-full;
+  @apply text-lg px-5 py-1 border-gray-500 border-2 rounded-full;
 }
 
 input {
@@ -22,9 +22,9 @@ input {
 }
 
 .checkbox {
-  @apply appearance-none bg-gray-100 border-2 border-gray-400 w-5 h-5 rounded-full checked:bg-blue-300 checked:border-transparent;
+  @apply appearance-none bg-gray-100 border-2 border-gray-400 w-5 h-5 rounded-full checked:bg-green-400 checked:border-transparent;
 }
 
 .card {
-  @apply bg-white border-gray-300 border-2 px-3 py-5 my-2 rounded-lg;
+  @apply bg-white border-2 border-gray-300 px-3 py-5 my-2 rounded-lg drop-shadow-sm;
 }
