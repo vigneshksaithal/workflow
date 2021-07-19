@@ -57,7 +57,7 @@
   </div>
 
   {#each tasksInput.subTasks as subTask}
-    <div class="grid grid-cols-12 mt-4 mb-4">
+    <div class="grid grid-cols-12 my-5">
       <input
         class="checkbox col-span-1 pr-2"
         type="checkbox"
