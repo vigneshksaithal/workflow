@@ -38,7 +38,7 @@
       <button class="btn-primary" on:click={startTimer}>START</button>
     </div>
   </div>
-  <!-- progress bar -->
+  <!-- time progress bar -->
   <div class="px-2 mt-3">
     <div class="h-3 relative w-full rounded-full overflow-hidden">
       <div class="w-full h-full bg-gray-200 absolute" />
@@ -53,11 +53,7 @@
 
 <div class="card px-6 mt-4 mb-6">
   <div class="grid grid-cols-12 gap-4 mb-5">
-    <input
-      class="col-span-12 input-text text-lg w-full"
-      type="text"
-      placeholder="Title"
-    />
+    <input class="col-span-12 text-lg w-full" type="text" placeholder="Title" />
   </div>
 
   {#each tasksInput.subTasks as subTask}
@@ -76,7 +72,7 @@
       />
     </div>
   {/each}
-  <div class="">
+  <div class="flex justify-end mt-8">
     <button class="btn-secondary" on:click={addTask}>Add a task</button>
   </div>
 </div>
