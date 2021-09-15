@@ -5,14 +5,9 @@
 <header
   class="border-b-2 border-green-400 flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-3 px-6 relative"
 >
-  <a href="/" class="block">
-    <span class="sr-onl font-semibold tracking-wider">Workflow</span>
-    <!-- <img
-        class="h-6 md:h-8"
-        src="/images/themesdev-logo-dark.svg"
-        alt="logo"
-        title="Themes.dev Logo"
-      /> -->
+  <a href="/" class="flex">
+    <img class="h-6 w-6 mr-2" src="/src/assets/logo.png" alt="logo" />
+    <span>Workflow</span>
   </a>
   <button
     on:click={() => {
