@@ -11,7 +11,7 @@
     "postcss": "^8.3.6",
     "svelte": "^3.42.5",
     "tailwindcss": "^2.2.15",
-    "vite": "^2.5.7"
+    "vite": "^2.5.8"
   },
   "dependencies": {
     "dayjs": "^1.10.7",
